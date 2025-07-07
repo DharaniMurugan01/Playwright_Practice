@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-
+test.use({ browserName: 'chromium' });
 test('Fill form', async ({ page }) => {
   // Increase timeout
   test.setTimeout(60000);
