@@ -35,8 +35,8 @@ test('Fill form', async ({ page }) => {
   await subject.type("Computer Science");
   // const checkbox=page.locator("//input[@id='hobbies-checkbox-2']");
   // await checkbox.click();
-  const filein=page.locator("//input[@id='uploadPicture']");
-  await filein.setInputFiles("pic.png");
+  //const filein=page.locator("//input[@id='uploadPicture']");
+  //await filein.setInputFiles("pic.png");
   await page.getByPlaceholder("Current Address").fill("hi this is dharani");
   await page.getByRole('button',{name:'Submit'}).click();
 });
